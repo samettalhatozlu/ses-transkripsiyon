@@ -6,7 +6,8 @@ Bu proje, OpenAI'nin Whisper modelini kullanarak ses dosyalarını metne dönü�
 
 ![image](https://github.com/user-attachments/assets/652b4e80-4beb-4beb-9092-cbd6c9f9909c)
 
-Örnek Kullanım
+## Örnek Kullanım:
+
 ![ses_project1](https://github.com/user-attachments/assets/ec281bfd-22da-4e5c-a8d2-2c649f8eded4)
 ![ses_project2](https://github.com/user-attachments/assets/612db053-20bf-4726-98f6-4361bbd25419)
 
