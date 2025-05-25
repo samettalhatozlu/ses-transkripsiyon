@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Ses Transkripsiyon{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10 text-center">
+        <h1 class="display-4 mb-4 fw-bold text-gradient">Ses Dosyalarınızı Metne Dönüştürün</h1>
+        <p class="lead mb-5 text-muted">
+            Yapay zeka destekli ses transkripsiyon sistemi ile ses dosyalarınızı hızlı ve doğru bir şekilde metne dönüştürün.
+        </p>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm hover-card">
+                    <div class="card-body">
+                        <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title fw-bold">Hızlı İşlem</h5>
+                        <p class="card-text text-muted">Ses dosyalarınızı saniyeler içinde metne dönüştürün.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm hover-card">
+                    <div class="card-body">
+                        <i class="fas fa-language fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title fw-bold">Türkçe Desteği</h5>
+                        <p class="card-text text-muted">Türkçe ses dosyalarını yüksek doğrulukla işleyin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm hover-card">
+                    <div class="card-body">
+                        <i class="fas fa-cloud-upload-alt fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title fw-bold">Kolay Kullanım</h5>
+                        <p class="card-text text-muted">Basit ve kullanıcı dostu arayüz ile kolayca kullanın.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg">
+            <div class="card-body p-5">
+                <h5 class="card-title mb-4 fw-bold">
+                    <i class="fas fa-cloud-upload-alt me-2 text-primary"></i>Ses Dosyası Yükle
+                </h5>
+                <form action="{{ url_for('transcribe') }}" method="POST" enctype="multipart/form-data" class="dropzone" id="audioDropzone">
+                    <div class="mb-4">
+                        <label for="audio_file" class="form-label fw-bold">Ses Dosyası Seçin</label>
+                        <input type="file" class="form-control form-control-lg" id="audio_file" name="audio_file" accept="audio/*" required>
+                        <div class="form-text">Desteklenen formatlar: WAV, MP3, AAC, M4A, OGG</div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg fw-bold">
+                            <i class="fas fa-microphone-alt me-2"></i>Transkripsiyon Başlat
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.text-gradient {
+    background: linear-gradient(45deg, #2196F3, #00BCD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hover-card {
+    transition: transform 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+}
+
+.dropzone {
+    border: 2px dashed #2196F3;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropzone:hover {
+    background-color: #f8f9fa;
+}
+</style>
+{% endblock %} 

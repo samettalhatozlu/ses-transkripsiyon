@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}Proje Hakkında - Ses Transkripsiyon{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h1 class="display-4 fw-bold text-gradient mb-5 text-center">Proje Hakkında</h1>
+
+            <div class="card shadow-lg mb-5">
+                <div class="card-body p-5">
+                    <h2 class="h3 fw-bold mb-4">Proje Amacı</h2>
+                    <p class="lead text-muted">
+                        Bu proje, OpenAI'nin Whisper modelini kullanarak ses dosyalarını metne dönüştüren basit ve kullanıcı dostu bir web uygulamasıdır. 
+                        Özellikle Türkçe ses dosyalarının transkripsiyonunda yüksek doğruluk oranı hedeflenmiştir.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card shadow-lg mb-5">
+                <div class="card-body p-5">
+                    <h2 class="h3 fw-bold mb-4">Kullanılan Teknolojiler</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fab fa-python fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h3 class="h5 fw-bold mb-1">Python & Flask</h3>
+                                    <p class="text-muted mb-0">Backend framework olarak Flask kullanılmıştır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-brain fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h3 class="h5 fw-bold mb-1">OpenAI Whisper</h3>
+                                    <p class="text-muted mb-0">Ses tanıma için Whisper AI modeli kullanılmıştır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fab fa-bootstrap fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h3 class="h5 fw-bold mb-1">Bootstrap 5</h3>
+                                    <p class="text-muted mb-0">Modern ve responsive tasarım için Bootstrap kullanılmıştır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-code fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h3 class="h5 fw-bold mb-1">HTML5 & CSS3</h3>
+                                    <p class="text-muted mb-0">Modern web standartları kullanılmıştır.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-lg mb-5">
+                <div class="card-body p-5">
+                    <h2 class="h3 fw-bold mb-4">Tasarım Özellikleri</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                                <h3 class="h5 fw-bold">Responsive Tasarım</h3>
+                                <p class="text-muted">Tüm cihazlarda mükemmel görünüm</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="fas fa-paint-brush fa-3x text-primary mb-3"></i>
+                                <h3 class="h5 fw-bold">Modern UI</h3>
+                                <p class="text-muted">Şık ve kullanıcı dostu arayüz</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                                <h3 class="h5 fw-bold">Hızlı İşlem</h3>
+                                <p class="text-muted">Optimize edilmiş performans</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-lg">
+                <div class="card-body p-5">
+                    <h2 class="h3 fw-bold mb-4">Güvenlik Özellikleri</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-shield-alt text-primary me-2"></i>
+                            Güvenli dosya yükleme ve işleme
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-trash-alt text-primary me-2"></i>
+                            Otomatik geçici dosya temizleme
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-lock text-primary me-2"></i>
+                            Güvenli dosya isimlendirme
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
