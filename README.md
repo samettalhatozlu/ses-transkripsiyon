@@ -3,6 +3,7 @@
 
 
 Bu proje, OpenAI'nin Whisper modelini kullanarak ses dosyalarını metne dönüştüren basit ve kullanıcı dostu bir web uygulamasıdır.
+
 ![image](https://github.com/user-attachments/assets/652b4e80-4beb-4beb-9092-cbd6c9f9909c)
 
 
