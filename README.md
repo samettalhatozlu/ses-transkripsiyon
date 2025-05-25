@@ -66,11 +66,6 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## İletişim
 
-- GitHub: [@kullaniciadi](https://github.com/kullaniciadi)
-- LinkedIn: [Adınız](https://linkedin.com/in/kullaniciadi)
-
-## Teşekkürler
-
-- OpenAI Whisper ekibine
-- Flask ekibine
-- Tüm katkıda bulunanlara 
+- GitHub: [@samettalhatozlu](https://github.com/samettalhatozlu)
+- LinkedIn: [Samet Talha Tozlu](https://linkedin.com/in/samettalhatozlu)
+- Instagram: @samettalha34
